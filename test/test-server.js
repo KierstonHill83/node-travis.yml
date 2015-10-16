@@ -17,12 +17,3 @@ it('should return a 200 response', function(done) {
     done();
   });
 });
-
-it('should return a 404 response', function(done) {
-  chai.request(server)
-  .get('/')
-  .end(function(res) {
-    res.should.have.status(404);
-      done();
-  });
-});
